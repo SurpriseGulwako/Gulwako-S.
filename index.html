@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Tebatso Kgaditsi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body and Layout Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('jason-leung-Xaanw0s0pMk-unsplash.jpg'); /* Set your background image */
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 100vh; 
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            background-color: rgba(74, 80, 44, 0.8); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #18BC9C;
+        }
+
+        /* Main Content Section */
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 50px;
+            width: 100%;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Profile Section */
+        .profile-photo {
+            position: relative;
+            flex: 0 0 40%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Content Section */
+        .content {
+            flex: 1;
+            padding-left: 30px;
+            position: relative;
+            max-width: 55%;
+        }
+
+        /* Typewriter Effect for Header */
+        .typewriter h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2C3E50;
+            overflow: hidden;
+            border-right: .15em solid orange; /* Typewriter cursor */
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+        }
+
+        /* Animation for typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Animation for cursor blink effect */
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            color: #18BC9C;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .content a:hover {
+            color: #504d2c;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(80, 76, 44, 0.8); /* Semi-transparent footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-content">
+        <!-- Profile Photo Section -->
+        <div class="profile-photo">
+            <img src="DSC02262.png" alt="Tebatso Kgaditsi">
+        </div>
+
+        <div class="content">
+            <div class="typewriter">
+                <h2>Hey,I'm Surprise Gulwako</h2>
+            </div>
+        <p>Explore my experience, skills, education, and projects.</p>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Surprise Gulwako. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
